@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindCare Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#quiz">Quiz</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="container">
+            <h1>MindCare Hub</h1>
+            <p>Your mental health companion. Take care of your mind, one step at a time.</p>
+        </div>
+    </header>
+
+        <div class="centered-div">
+            <h3> << Anxiety Self-Assessment Quiz  >></h3>
+            <p> Answer the following questions to evaluate your anxiety levels.</p>
+        </div>
+
+    <section class="quiz-container">
+        <div class="container">
+            <form id="anxietyQuiz">
+                <div class="question">
+                    <h3>1. How often do you feel nervous or anxious?</h3>
+                    <label><input type="radio" name="q1" value="1"> Rarely</label>
+                    <label><input type="radio" name="q1" value="2"> Sometimes</label>
+                    <label><input type="radio" name="q1" value="3"> Often</label>
+                    <label><input type="radio" name="q1" value="4"> Always</label>
+                </div>
+
+                <div class="question">
+                    <h3>2. Do you experience difficulty sleeping due to racing thoughts or worries?</h3>
+                    <label><input type="radio" name="q2" value="1"> Rarely</label>
+                    <label><input type="radio" name="q2" value="2"> Sometimes</label>
+                    <label><input type="radio" name="q2" value="3"> Often</label>
+                    <label><input type="radio" name="q2" value="4"> Almost always</label>
+                </div>
+
+                <div class="question">
+                    <h3>3. How often do you feel overwhelmed by your daily tasks or responsibilities?</h3>
+                    <label><input type="radio" name="q3" value="1"> Rarely</label>
+                    <label><input type="radio" name="q3" value="2"> Sometimes</label>
+                    <label><input type="radio" name="q3" value="3"> Often</label>
+                    <label><input type="radio" name="q3" value="4"> Almost always</label>
+                </div>
+
+                <div class="question">
+                    <h3>4. Do you experience physical symptoms such as rapid heartbeat, sweating, or trembling when feeling anxious?</h3>
+                    <label><input type="radio" name="q4" value="1"> Rarely</label>
+                    <label><input type="radio" name="q4" value="2"> Sometimes</label>
+                    <label><input type="radio" name="q4" value="3"> Often</label>
+                    <label><input type="radio" name="q4" value="4"> Almost always</label>
+                </div>
+
+                <div class="question">
+                    <h3>5. How often do you avoid social situations or activities due to feelings of anxiety or fear?</h3>
+                    <label><input type="radio" name="q5" value="1"> Rarely</label>
+                    <label><input type="radio" name="q5" value="2"> Sometimes</label>
+                    <label><input type="radio" name="q5" value="3"> Often</label>
+                    <label><input type="radio" name="q5" value="4"> Almost always</label>
+                </div>
+
+                <div class="question">
+                    <h3>6. Do you experience feelings of restlessness or fidgetiness when feeling anxious?</h3>
+                    <label><input type="radio" name="q6" value="1"> Rarely</label>
+                    <label><input type="radio" name="q6" value="2"> Sometimes</label>
+                    <label><input type="radio" name="q6" value="3"> Often</label>
+                    <label><input type="radio" name="q6" value="4"> Almost always</label>
+                </div>
+
+                <div class="question">
+                    <h3>7. How often do you feel like you're on edge or "on the lookout" for potential dangers?</h3>
+                    <label><input type="radio" name="q7" value="1"> Rarely</label>
+                    <label><input type="radio" name="q7" value="2"> Sometimes</label>
+                    <label><input type="radio" name="q7" value="3"> Often</label>
+                    <label><input type="radio" name="q7" value="4"> Almost always</label>
+                </div>
+
+                <div class="question">
+                    <h3>8. Do you experience feelings of self-doubt or low self-esteem when feeling anxious?</h3>
+                    <label><input type="radio" name="q8" value="1"> Rarely</label>
+                    <label><input type="radio" name="q8" value="2"> Sometimes</label>
+                    <label><input type="radio" name="q8" value="3"> Often</label>
+                    <label><input type="radio" name="q8" value="4"> Almost always</label>
+                </div>
+
+                <button type="submit" class="btn">Submit Quiz</button>
+            </form>
+
+            <div id="result" class="result">
+                <h2>Your Anxiety Score</h2>
+                <p id="score"></p>
+                <p id="feedback"></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Mental Health Self-Assessment Tools | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('anxietyQuiz').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+            
+            let score = 0;
+            
+            // Collect scores from each question
+            const q1 = document.querySelector('input[name="q1"]:checked');
+            const q2 = document.querySelector('input[name="q2"]:checked');
+            const q3 = document.querySelector('input[name="q3"]:checked');
+            const q4 = document.querySelector('input[name="q4"]:checked');
+            const q5 = document.querySelector('input[name="q5"]:checked');
+            const q6 = document.querySelector('input[name="q6"]:checked');
+            const q7 = document.querySelector('input[name="q7"]:checked');
+            const q8 = document.querySelector('input[name="q8"]:checked');
+            
+            // Ensure all questions are answered
+            if (!q1 || !q2 || !q3 || !q4 || !q5 || !q6 || !q7 || !q8) {
+                alert('Please answer all questions.');
+                return;
+            }
+            
+            // Calculate total score
+            score += parseInt(q1.value);
+            score += parseInt(q2.value);
+            score += parseInt(q3.value);
+            score += parseInt(q4.value);
+            score += parseInt(q5.value);
+            score += parseInt(q6.value);
+            score += parseInt(q7.value);
+            score += parseInt(q8.value);
+            
+            // Display result
+            const scoreElement = document.getElementById('score');
+            const feedbackElement = document.getElementById('feedback');
+            
+            scoreElement.textContent = `Your Total Score: ${score}`;
+            
+            // Feedback based on score
+            let feedback = '';
+            if (score <= 10) {
+                feedback = 'You appear to have minimal anxiety.';
+            } else if (score <= 20) {
+                feedback = 'You may be experiencing mild anxiety.';
+            } else if (score <= 30) {
+                feedback = 'You may be experiencing moderate anxiety.';
+            } else {
+                feedback = 'You may be experiencing severe anxiety. Consider seeking professional help.';
+            }
+            
+            feedbackElement.textContent = feedback;
+            document.getElementById('result').style.display = 'block';
+        });
+    </script>
+
+    <script src="index.js"></script>
+    <script src="chatbot.js"></script>
+    <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
+<script src="https://mediafiles.botpress.cloud/60f04624-05e2-4eef-bde0-718bfe7f2190/webchat/v2.1/config.js"></script>
+
+
+
+</body>
+</html>

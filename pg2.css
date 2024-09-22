@@ -1,0 +1,168 @@
+/* General reset and styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    background: linear-gradient(145deg, #65d6a7, #3977d4);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+/* Header Section */
+header {
+    background-color: #004d40;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Assessment Tools Section */
+.assessment-tools {
+    background-color: white;
+    padding: 40px 20px;
+    text-align: center;
+    background: linear-gradient(145deg, #65d6a7, #3977d4);
+}
+
+.assessment-tools h2 {
+    color: #004d40;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.quiz-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.quiz-card {
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.quiz-card h3 {
+    color: #004d40;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.quiz-card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.quiz-card a {
+    display: inline-block;
+    background-color: #004d40;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.quiz-card a:hover {
+    background-color: #002b24;
+}
+
+/* Instructions Section */
+.instructions {
+    background-color: #fafafa;
+    padding: 40px 20px;
+    text-align: center;
+    background: linear-gradient(145deg, #65d6a7, #3977d4);
+}
+
+.instructions h2 {
+    color: #004d40;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.instructions p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.instructions ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.instructions ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Disclaimer Section */
+.disclaimer {
+    background-color: #fff8e1;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.disclaimer h2 {
+    color: #d32f2f;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.disclaimer p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Footer Section */
+footer {
+    background-color: #004d40;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 0.9rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+.id2{
+ background: linear-gradient(145deg, #65d6a7, #3977d4);   
+}
+.price{
+    color: yellow;
+}

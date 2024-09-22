@@ -1,0 +1,549 @@
+/* General reset and styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    background-image: url('pic.jpg');
+}
+
+header {
+    background-color: #001F3F;
+    color: white;
+    padding: 1rem 0;
+}
+
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    font-size: 1rem;
+}
+
+header nav ul li a {
+    color: #6A9AB0;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background-image: url('https://example.com/mental-health-image.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.container {
+
+    max-width: 800px;
+    margin: 0 auto;
+    /* background-image: ; */
+   
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #004d40;
+}
+
+.resource {
+    width:800px;
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/020/499/035/large_2x/watercolor-turquoise-gradient-background-texture-aquarelle-abstract-blue-ombre-backdrop-photo.jpg");
+}
+
+.resource h3 {
+    font-size: 1.5rem;
+    color: #004d40;
+    margin-bottom: 10px;
+}
+
+.resource p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.form-group {
+    max-width: 900px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #004d40;
+    outline: none;
+    background-color: #6A9AB0;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #004d40;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #00332b;
+}
+
+footer {
+    background-color: #004d40;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.resource-card {
+    background: linear-gradient(145deg, #65d6a7, #3977d4);
+    border-radius: 30px;
+    margin-bottom: 10px;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto 20px;
+    
+}
+
+.resource-card h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.resource-card p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.resource-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 768px) {
+    .resource-card {
+        padding: 40px;
+    }
+
+    .resource-card h2 {
+        font-size: 28px;
+    }
+
+    .resource-card p {
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+/* Container and Form Styling */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto; /* Center the form */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Input Fields */
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:hover, input[type="email"]:hover, textarea:hover {
+    border-color: #009688; /* Light green border on hover */
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #009688;
+    outline: none;
+    background-color: #f0f7f7; /* Subtle background change on focus */
+}
+
+/* Textarea Styling */
+textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    width: 100%;
+    background-color: #004d40;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #00796b; /* Lighter shade on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+    transform: translateY(-3px); /* Slight upward movement */
+}
+
+/* Form Heading */
+.contact-form h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #004d40;
+    font-weight: bold;
+}
+
+/* Background Styling */
+/* body {
+    background: linear-gradient(135deg, rgba(0, 77, 64, 0.5), rgba(0, 150, 136, 0.5)), url('path/to/background-image.jpg') no-repeat center center;
+    background-size: cover;
+    font-family: 'Arial', sans-serif; }*/
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .contact-form {
+        width: 90%; /* Slightly smaller on small screens */
+    }
+}
+
+/* Contact Form Container */
+.contact-form {
+    background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent white */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for the floating effect */
+    position: relative;
+    z-index: 1;
+}
+
+/* Input Fields */
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    background: #f9f9f9; /* Light background for input */
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #00796b; /* Green border on focus */
+    background-color: #f0f7f7; /* Slight background color change on focus */
+    outline: none;
+}
+
+/* Placeholder Styling */
+input::placeholder, textarea::placeholder {
+    color: #888;
+    font-style: italic;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    width: 100%;
+    background: linear-gradient(45deg, #009688, #004d40); /* Gradient background */
+    color: #ffffff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(45deg, #00796b, #00695c); /* Lighter green gradient on hover */
+    transform: translateY(-3px); /* Slight upward movement on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+}
+
+/* Section Heading */
+.contact-form h3 {
+    text-align: center;
+    font-size: 28px;
+    color: #004d40;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Icons inside Input Fields */
+input[type="text"], input[type="email"], textarea {
+    padding-left: 40px; /* Space for the icons */
+    position: relative;
+}
+
+/* Adding the Icon before Input */
+input[type="text"]::before, input[type="email"]::before, textarea::before {
+    content: attr(data-icon); /* Assuming you add data-icon attribute to inputs */
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'FontAwesome'; /* Use FontAwesome for icons */
+    color: #888;
+}
+
+/* Background Enhancements */
+.contact-section {
+    background: linear-gradient(135deg, rgba(0, 150, 136, 0.5), rgba(0, 77, 64, 0.5)), url('path/to/your-background-image.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 60px 0;
+    position: relative;
+}
+
+.contact-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2); /* Soft overlay for text clarity */
+    z-index: 0;
+}
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f8ff; /* Light background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Contact Section */
+#contact {
+    background-color:white; /* White background */
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Heading Style */
+#contact h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#contact h2::after {
+    content: '';
+    width: 80px;
+    height: 3px;
+    background-color: #3caea3; /* Accent color */
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Form Styles */
+form {
+    width: 100%;
+    max-width: 600px;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    background: #f9f9f9;
+    font-size: 16px;
+    transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #3caea3; /* Border on focus */
+    background-color: #fff;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+/* Placeholder Text */
+::placeholder {
+    color: #888;
+    font-style: italic;
+}
+
+/* Labels */
+label {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    font-size: 14px;
+    color: #888;
+    background: #fff;
+    padding: 0 5px;
+}
+
+/* Submit Button */
+.btn {
+    width: 100%;
+    background: linear-gradient(45deg, #3caea3, #11999e); /* Gradient */
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:  0.3s ease, transform 0.2s ease;
+    
+}
+
+.btn:hover 
+{
+    background: linear-gradient(45deg, #11999e, #00796b);
+    transform: translateY(-2px);
+    color: white;
+    text-decoration: none; }/* Lift on hover *
+
+
+/* Add Icon inside Input (Optional, requires Font Awesome or similar) */
+input[type="text"], input[type="email"], textarea {
+    padding-left: 50px; /* Add space for icons */
+}
+
+input[type="text"]::before, input[type="email"]::before, textarea::before {
+    content: attr(data-icon); /* Use Font Awesome or similar */
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'FontAwesome'; /* Load icon library */
+    color: #bbb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #contact {
+        padding: 30px 15px;
+    }
+    #contact h2 {
+        font-size: 28px;
+    }
+    .btn {
+        font-size: 16px;
+    }}
+
+

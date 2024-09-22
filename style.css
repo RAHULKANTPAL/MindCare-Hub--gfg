@@ -1,0 +1,197 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+    background-color: #450854;
+    overflow: hidden;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    float: left;
+}
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    background-color: #c6a18a;
+}
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    background-color: #1a1a1a;
+  }
+  
+
+  /* Header Styles */
+  .centered-div {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    display: grid;
+    place-items: start;
+    padding-top: 30px;
+    padding-left: 100px; /* Adjust the value as needed */
+    height: 12vh; 
+  }
+ 
+  
+  
+  /* Quiz Container Styles */
+  
+  .quiz-container {
+    margin-top: 40px;
+  }
+  
+  .question {
+    margin-bottom: 20px;
+  }
+  
+  .question h3 {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #03A9F4;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  /* Result Styles */
+  
+  .result {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .result h2 {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #03A9F4;
+  }
+  
+  #score {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  #feedback {
+    font-size: 18px;
+    color: #ccc;
+  }
+  
+  /* Chatbot Styles */
+  
+  .chatbot {
+    margin-top: 40px;
+  }
+  
+  .chat-window {
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    background-color: #2f2f2f;
+  }
+  
+  .chat-bot-message {
+    margin-bottom: 20px;
+  }
+  
+  .chat-bot-message p {
+    font-size: 18px;
+    color: #ccc;
+  }
+  
+  .chat-input {
+    margin-top: 20px;
+  }
+  
+  #chatInput {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    background-color: #2f2f2f;
+    color: #fff;
+  }
+  
+  #sendBtn {
+    background-color: #03A9F4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  #sendBtn:hover {
+    background-color: #007ac1;
+  }
+  
+  /* Footer Styles */
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+    border-top: 1px solid #444;
+  }
+  
+  footer p {
+    font-size: 14px;
+    color: #ccc;
+  }
+
+  #result {
+    display: none;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://www.example.com/beautiful-background.jpg'); /* Replace with actual image URL */
+    background-size: cover;
+    background-position: center;
+}
+header {
+    background: rgba(0, 0, 0, 0.5); /* Add transparency */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+header p {
+    font-size: 1.2em;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
